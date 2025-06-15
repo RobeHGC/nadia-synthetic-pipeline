@@ -1,5 +1,7 @@
 # Synthetic Data Pipeline for Nadia v1.0
 
+
+
 ## 🎯 Objetivo
 Pipeline automatizado para generar datos sintéticos de alta calidad para el entrenamiento de Nadia, eliminando riesgos de privacidad al no exponer datos reales a anotadores humanos.
 
@@ -33,3 +35,15 @@ synthetic_pipeline/
 - [ ] Patrones analizados
 - [ ] Datos sintéticos generados
 - [ ] Etiquetado completado
+
+## ⚠️ SEGURIDAD - IMPORTANTE ⚠️
+
+Este es un repositorio PÚBLICO. **NUNCA** subas:
+- Datos reales de conversaciones
+- API keys (OpenAI, etc.)
+- Información personal de usuarios
+- Archivos de configuración con credenciales
+
+### Verificación antes de cada push:
+```bash
+./check_before_push.sh

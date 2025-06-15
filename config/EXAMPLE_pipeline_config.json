@@ -1,0 +1,13 @@
+{
+  "⚠️ ADVERTENCIA": "NUNCA subas el archivo real pipeline_config.json",
+  "📝 INSTRUCCIONES": "Copia este archivo a pipeline_config.json y agrega tus keys reales",
+  
+  "pipeline": {
+    "version": "1.0"
+  },
+  
+  "api_keys": {
+    "openai": "sk-XXXXXXXXXXXXXXXXXXXXXXXX",
+    "⚠️ NOTA": "Reemplaza con tu API key real de OpenAI"
+  }
+}
