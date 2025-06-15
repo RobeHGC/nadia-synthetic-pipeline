@@ -1,0 +1,41 @@
+{
+  "pipeline": {
+    "version": "1.0",
+    "name": "nadia_synthetic_pipeline",
+    "description": "Pipeline híbrido para generación de datos sintéticos"
+  },
+  "data_sources": {
+    "raw_data_path": "data/raw/",
+    "file_pattern": "*.json",
+    "encoding": "utf-8"
+  },
+  "anonymization": {
+    "aggressive_mode": true,
+    "min_conversation_length": 3,
+    "patterns_to_remove": ["emails", "phones", "names", "addresses", "ids"],
+    "confidence_threshold": 0.8
+  },
+  "pattern_analysis": {
+    "min_conversation_length": 3,
+    "max_conversation_length": 50,
+    "vocabulary_size_limit": 10000,
+    "intent_detection_method": "heuristic"
+  },
+  "synthetic_generation": {
+    "provider": "openai",
+    "model": "gpt-4",
+    "temperature": 0.8,
+    "max_tokens_per_conversation": 800,
+    "n_conversations_to_generate": 100,
+    "batch_size": 10,
+    "retry_attempts": 3
+  },
+  "api_keys": {
+    "openai": "YOUR_OPENAI_API_KEY_HERE"
+  },
+  "output": {
+    "synthetic_data_format": "jsonl",
+    "label_studio_format": true,
+    "include_metadata": true
+  }
+}

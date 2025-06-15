@@ -1,0 +1,48 @@
+# Datos sensibles - NUNCA subir
+data/raw/*
+!data/raw/.gitkeep
+
+# Datos intermedios sensibles
+data/anonymized/*
+!data/anonymized/.gitkeep
+
+# Configuraciones con API keys
+config/pipeline_config.json
+config/.env
+
+# Logs que pueden contener información sensible
+logs/*
+!logs/.gitkeep
+
+# Outputs temporales
+outputs/checkpoints/*
+!outputs/checkpoints/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
