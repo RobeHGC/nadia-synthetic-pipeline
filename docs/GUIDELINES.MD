@@ -290,8 +290,9 @@ LEVEL_3: palabras vulgares, partes del cuerpo, verbos sexuales explícitos
 | Amenazas o acoso                            | LEVEL_3_INAPPROPRIATE          |
 
 ### 4. DIMENSIÓN: CUSTOMER_STATUS
-Propósito: Modelar la etapa del ciclo de vida comercial del usuario. Esta dimensión se asigna a nivel de conversación completa, NO mensaje individual.
-No se etiquetaran en docker, se etiquetará a nivel global 
+Propósito: Modelar la etapa del ciclo de vida comercial del usuario. 
+In vivo: Se asigna por mensaje (during-label)
+In-vitro: Se asigna a nivel global (pre-label) 
 
 #### 4.1 PROSPECT
 Definición: Usuario nuevo que nunca ha expresado intención de pagar ni ha sido expuesto a un CTA directo.
